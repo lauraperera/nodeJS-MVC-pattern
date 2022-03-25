@@ -10,3 +10,9 @@ npm init
 ```
 npm install express --save
 ```
+
+### Criar as pastas
+* models
+* views (API não usa view pq é client side)
+* controllers
+* routes
