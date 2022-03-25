@@ -26,5 +26,5 @@ const DeleteUserById = (id)=>{
 module.exports = {
     QueryUserById,
     QueryListOfUsers,
-    DeleteUserById
+    DeleteUserById,
 };
