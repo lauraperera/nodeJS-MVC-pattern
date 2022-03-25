@@ -25,4 +25,5 @@ let user_test = [
     },
 ];
 
+//exports table
 module.exports = {user_test};
