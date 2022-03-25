@@ -2,8 +2,6 @@
 const express = require("express")
 //instance of a router
 const router = express.Router()
-//import the controller
-const controller = require("../controllers/UserController");
 
 router.get("/", controller.get)
 
