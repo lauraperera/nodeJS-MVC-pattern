@@ -2,7 +2,7 @@ const{
     QueryUserById,
     QueryListOfUsers,
     DeleteUserById,
-} = require("../service/UserTable");
+} = require("../service/UserTable")
 
 const GetUser = (req, res)=>{
     const userId = req.params.id;
@@ -17,8 +17,10 @@ const GetAllUsers = (req, res)=>{
 
 const DeleteUser = (req, res)=>{
     const userId = req.params.id;
-    const user = DeleteUser(userId);
+    const user = DeleteUserById(userId);
+    console.log(user)
     return res.json(user);
+    // return res.json(user);
 };
 
 //posts and http requests

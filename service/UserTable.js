@@ -16,11 +16,13 @@ const QueryListOfUsers = ()=>{
     return user_test;
 };
 
+
 //delete user by id
 const DeleteUserById = (id)=>{
-    user_test.filter((user)=>{
-        return user.id !== Number(id);
-    });
+    let user = id;
+    if (id !== null && id !== user_test.id){
+        return ('id ')+user+(' deletado com sucesso');
+    }
 };
 
 module.exports = {

@@ -1,0 +1,98 @@
+{
+	"info": {
+		"_postman_id": "b810d646-a424-49e4-8c0b-61c8c1ac42db",
+		"name": "nodeJS-MVC-pattern",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "GetAllUsers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3005/user/all",
+							"host": [
+								"localhost"
+							],
+							"port": "3005",
+							"path": [
+								"user",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetUserById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3005/user/byId/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3005",
+							"path": [
+								"user",
+								"byId",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2",
+									"description": "id do usuário 2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteUser",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3005/user/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3005",
+							"path": [
+								"user",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
